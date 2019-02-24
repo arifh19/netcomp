@@ -28,7 +28,7 @@ You are Reviewer
                         </div>
                         <div class="form-group has-success">
                             <label for="cc-name" class="control-label mb-1">Cabang Lomba</label>
-                                <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control">
+                                <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control" required>
                                     <option>Pilih Cabang Lomba ...</option>
                                     @foreach ($kategoris as $kategori)
                                         <option value="{{$kategori->id}}">{{$kategori->nama}}</option>
@@ -58,22 +58,22 @@ You are Reviewer
                         </div>
                         <div class="form-group">
                             <label for="anggota1" class="control-label mb-1">Nama Anggota 1</label>
-                            <input id="anggota1" name="anggota1" type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                            <input id="anggota1" name="anggota1" type="text" class="form-control" aria-required="true" aria-invalid="false">
                             <span class="help-block" data-valmsg-for="anggota1" data-valmsg-replace="true"></span>
                         </div>
                         <div class="form-group">
                             <label for="nim1" class="control-label mb-1">NIM Anggota 1</label>
-                            <input id="nim1" name="nim1" type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                            <input id="nim1" name="nim1" type="text" class="form-control" aria-required="true" aria-invalid="false">
                             <span class="help-block" data-valmsg-for="nim1" data-valmsg-replace="true"></span>
                         </div>
                         <div id="anggota2" class="form-group">
                             <label for="anggota2" class="control-label mb-1">Nama Anggota 2</label>
-                            <input id="anggota2" name="anggota2" type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                            <input id="anggota2" name="anggota2" type="text" class="form-control" aria-required="true" aria-invalid="false">
                             <span class="help-block" data-valmsg-for="anggota2" data-valmsg-replace="true"></span>
                         </div>
                         <div id="nim2" class="form-group">
                             <label for="nim2" class="control-label mb-1">NIM Anggota 2</label>
-                            <input id="nim2" name="nim2" type="text" class="form-control" aria-required="true" aria-invalid="false" required>
+                            <input id="nim2" name="nim2" type="text" class="form-control" aria-required="true" aria-invalid="false">
                             <span class="help-block" data-valmsg-for="nim2" data-valmsg-replace="true"></span>
                         </div>
                         <div>
