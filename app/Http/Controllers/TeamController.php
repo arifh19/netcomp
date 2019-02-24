@@ -45,7 +45,7 @@ class TeamController extends Controller
         $cekteam = Team::where('user_id',auth()->user()->id);
         if($cekteam->count()>0){
             $team=$cekteam->first();
-            if(!$team->first()->update($request->all())) return redirect()->back();
+            if(!$team->update($request->all())) return redirect()->back();
         }
         else{
             $team = Team::create($request->all());
