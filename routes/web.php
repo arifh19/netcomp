@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('comingsoon');
+    return view('auth.login');
 });
 
 Route::get('/landing', function () {
