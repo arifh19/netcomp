@@ -87,7 +87,7 @@
                     @endif
                             <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
                                 <i class="fa fa-send fa-lg"></i>&nbsp;
-                                <span id="payment-button-amount">Daftar Tim</span>
+                                <span id="payment-button-amount">Ubah</span>
                                 <span id="payment-button-sending" style="display:none;">Sending…</span>
                             </button>
                         </div>
