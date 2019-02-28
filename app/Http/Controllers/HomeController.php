@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Team;
 use App\Kategori;
+use Laratrust\LaratrustFacade as Laratrust;
 
 class HomeController extends Controller
 {
@@ -23,16 +24,21 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
-        $cekkategori = Team::where('user_id',auth()->user()->id)->count();
-        if($cekkategori<1){
-            $kategoris = Kategori::all();
-            return view('kategori')->with(compact('kategoris'));
+        if (Laratrust::hasRole('member')) {
+            $cekkategori = Team::where('user_id',auth()->user()->id)->count();
+            if($cekkategori<1){
+                $kategoris = Kategori::all();
+                return view('kategori')->with(compact('kategoris'));
+            }
+            else {
+                return view('dashboard');
+            }
         }
-        else {
-            return view('dashboard');
+        else{
+            return view('auth.login');
         }
-
     }
 }

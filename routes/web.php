@@ -12,9 +12,7 @@
 */
 
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+Route::get('/', 'HomeController@index')->name('landing');
 
 Route::get('/landing', function () {
     return view('welcome');
@@ -22,9 +20,33 @@ Route::get('/landing', function () {
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/peserta/tim', 'TeamController@index')->name('peserta.tim');
-Route::get('/peserta/tim/edit', 'TeamController@edit')->name('peserta.tim.edit');
-Route::get('/peserta/proposal', 'ProposalController@index')->name('peserta.proposal');
-Route::post('/peserta/proposal', 'ProposalController@store')->name('peserta.proposal.store');
-Route::post('/team', 'TeamController@store')->name('team.store');
+Route::get('/peserta/tim', [
+    'middleware' => ['auth', 'role:peserta'],
+    'as' => 'peserta.tim',
+    'uses' => 'TeamController@index'
+]);
+
+Route::get('/peserta/tim/edit', [
+    'middleware' => ['auth', 'role:peserta'],
+    'as' => 'peserta.tim.edit',
+    'uses' => 'TeamController@edit'
+]);
+
+Route::get('/peserta/proposal', [
+    'middleware' => ['auth', 'role:peserta'],
+    'as' => 'peserta.proposal',
+    'uses' => 'ProposalController@index'
+]);
+
+Route::post('/peserta/proposal', [
+    'middleware' => ['auth', 'role:peserta'],
+    'as' => 'peserta.proposal.store',
+    'uses' => 'ProposalController@store'
+]);
+
+Route::post('/peserta/proposal', [
+    'middleware' => ['auth', 'role:peserta'],
+    'as' => 'team.store',
+    'uses' => 'TeamController@store'
+]);
+

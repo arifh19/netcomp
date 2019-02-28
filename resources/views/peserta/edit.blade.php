@@ -22,7 +22,7 @@
                         </div>
                         <div class="form-group has-success">
                             <label for="cc-name" class="control-label mb-1">Cabang Lomba</label>
-                        <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control">
+                        <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control" required>
                                     <option>Pilih Cabang Lomba ...</option>
                                     @foreach ($kategoris as $kategori)
                                         <option value="{{$kategori->id}}">{{$kategori->nama}}</option>
