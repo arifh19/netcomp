@@ -42,6 +42,9 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
+        if($request->kategori_id==0){
+            return redirect()->back();
+        }
         $cekteam = Team::where('user_id',auth()->user()->id);
         if($cekteam->count()>0){
             $team=$cekteam->first();

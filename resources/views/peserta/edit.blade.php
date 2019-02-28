@@ -21,8 +21,9 @@
                             <span class="help-block" data-valmsg-for="nama_tim" data-valmsg-replace="true"></span>
                         </div>
                         <div class="form-group has-success">
-                            <label for="cc-name" class="control-label mb-1 js-select2">Cabang Lomba</label>
-                        <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control" placeholder="Pilih Cabang Lomba" required>
+                            <label for="kategori_id" class="control-label mb-1">Cabang Lomba</label>
+                        <select onchange="getval(this);" name="kategori_id" id="kategori_id" class="form-control" required>
+                                    <option value="0">Pilih Cabang Lomba </option>
                                     @foreach ($kategoris as $kategori)
                                         <option value="{{$kategori->id}}">{{$kategori->nama}}</option>
                                     @endforeach
