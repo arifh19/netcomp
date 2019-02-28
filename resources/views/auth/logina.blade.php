@@ -5,7 +5,8 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Title Page-->
     <title>Net Competition 2019</title>
 
@@ -18,29 +19,15 @@
     <!-- Bootstrap CSS-->
     <link href="{{ asset('/cooladmin/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
 
-    <!-- Vendor CSS-->
-    <link href="{{ asset('/cooladmin/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
-    {{-- <link href="{{ asset('/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all"> --}}
-    <link href="{{ asset('/cooladmin/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('/cooladmin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
-    {{-- <link href="{{ asset('/cooladmin/vendor/slick/slick.css') }}" rel="stylesheet" media="all"> --}}
-    {{-- <link href="{{ asset('/cooladmin/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all"> --}}
-
     <!-- Main CSS-->
     <link href="{{ asset('/cooladmin/css/theme.css') }}" rel="stylesheet" media="all">
 
-
 </head>
 
-<body class="animsition" style="background-color:#e5e5e5">
+<body class="animsition">
     <div class="page-wrapper">
-
-
-        <!-- PAGE CONTAINER-->
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="container">
+        <div class="page-content--bge5">
+            <div class="container">
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
@@ -79,40 +66,15 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <footer>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright">
-                           <p>Copyright © 2019 Teknologi Rekayasa Internet. All rights reserved. visit <a href="https://tri.sv.ugm.ac.id">Net Competition 2019</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
     </div>
-    @yield('scripts')
     @include('sweetalert::alert')
     <!-- Jquery JS-->
     <script src="{{ asset('/cooladmin/vendor/jquery-3.2.1.min.js') }}"></script>
     <!-- Bootstrap JS-->
-    {{-- <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/popper.min.js') }}"></script> --}}
     <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
     <!-- Vendor JS       -->
-    {{-- {{-- <script src="{{ asset('/cooladmin/vendor/slick/slick.min.js') }}">
-    </script> --}}
-    {{-- <script src="{{ asset('/cooladmin/vendor/wow/wow.min.js') }}"></script> --}}
-    <script src="{{ asset('/cooladmin/vendor/animsition/animsition.min.js') }}"></script>
-    {{-- <script src="{{ asset('/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}">
-    </script>
-    <script src="{{ asset('/cooladmin/vendor/counter-up/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('/cooladmin/vendor/counter-up/jquery.counterup.min.js') }}">
-    </script> --}}
-    {{-- <script src="{{ asset('/cooladmin/vendor/circle-progress/circle-progress.min.js') }}"></script> --}}
-    <script src="{{ asset('/cooladmin/css/font-face.css') }}"></script>
-    {{-- <script src="{{ asset('/cooladmin/vendor/chartjs/Chart.bundle.min.js') }}"></script>
-    <script src="{{ asset('/cooladmin/vendor/select2/select2.min.js') }}">
-    </script>--}}
 
     <!-- Main JS-->
     <script src="{{ asset('/cooladmin/js/main.js')}}"></script>
