@@ -18,14 +18,14 @@
     <!-- Bootstrap CSS-->
     <link href="{{ asset('/cooladmin/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
 
-    <!-- Vendor CSS-->
+    {{-- <!-- Vendor CSS-->
     <link href="{{ asset('/cooladmin/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all"> --}}
 
     <!-- Main CSS-->
     <link href="{{ asset('/cooladmin/css/theme.css') }}" rel="stylesheet" media="all">
@@ -223,9 +223,9 @@
     <!-- Jquery JS-->
     <script src="{{ asset('/cooladmin/vendor/jquery-3.2.1.min.js') }}"></script>
     <!-- Bootstrap JS-->
-    <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/popper.min.js') }}"></script>
+    {{-- <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/popper.min.js') }}"></script> --}}
     <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
-    <!-- Vendor JS       -->
+    {{-- <!-- Vendor JS       -->
     <script src="{{ asset('/cooladmin/vendor/slick/slick.min.js') }}">
     </script>
     <script src="{{ asset('/cooladmin/vendor/wow/wow.min.js') }}"></script>
@@ -238,7 +238,7 @@
     <script src="{{ asset('/cooladmin/vendor/circle-progress/circle-progress.min.js') }}"></script>
     <script src="{{ asset('/cooladmin/css/font-face.css') }}"></script>
     <script src="{{ asset('/cooladmin/vendor/chartjs/Chart.bundle.min.js') }}"></script>
-    <script src="{{ asset('/cooladmin/vendor/select2/select2.min.js') }}">
+    <script src="{{ asset('/cooladmin/vendor/select2/select2.min.js') }}"> --}}
     </script>
 
     <!-- Main JS-->
