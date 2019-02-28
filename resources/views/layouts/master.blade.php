@@ -22,7 +22,7 @@
     <link href="{{ asset('/cooladmin/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
     {{-- <link href="{{ asset('/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all"> --}}
     <link href="{{ asset('/cooladmin/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
-    {{-- <link href="{{ asset('/cooladmin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all"> --}}
+    <link href="{{ asset('/cooladmin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
     {{-- <link href="{{ asset('/cooladmin/vendor/slick/slick.css') }}" rel="stylesheet" media="all"> --}}
     {{-- <link href="{{ asset('/cooladmin/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all"> --}}
@@ -226,7 +226,7 @@
     {{-- <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/popper.min.js') }}"></script> --}}
     <script src="{{ asset('/cooladmin/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
     <!-- Vendor JS       -->
-    {{-- <script src="{{ asset('/cooladmin/vendor/slick/slick.min.js') }}">
+    {{-- {{-- <script src="{{ asset('/cooladmin/vendor/slick/slick.min.js') }}"> --}}
     </script> --}}
     {{-- <script src="{{ asset('/cooladmin/vendor/wow/wow.min.js') }}"></script> --}}
     <script src="{{ asset('/cooladmin/vendor/animsition/animsition.min.js') }}"></script>

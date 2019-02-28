@@ -43,7 +43,7 @@ class TeamController extends Controller
     public function store(Request $request)
     {
         if($request->kategori_id==0){
-            return redirect()->back();
+            return redirect()->back()->with('error', 'Data tim belum lengkap');
         }
         $cekteam = Team::where('user_id',auth()->user()->id);
         if($cekteam->count()>0){
@@ -56,7 +56,7 @@ class TeamController extends Controller
         $team->user_id = auth()->user()->id;
         $team->verify_id = 1;
         $team->save();
-        return redirect()->route('home');
+        return redirect()->route('peserta.tim')->with('success', 'Data telah diperbaharui');
     }
 
     /**
