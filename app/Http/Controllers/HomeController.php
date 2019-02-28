@@ -27,7 +27,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        if (Laratrust::hasRole('member')) {
+        if (Laratrust::hasRole('peserta')) {
             $cekkategori = Team::where('user_id',auth()->user()->id)->count();
             if($cekkategori<1){
                 $kategoris = Kategori::all();
