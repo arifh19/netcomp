@@ -32,7 +32,7 @@
 
 
 </head>
-@include('sweetalert::alert')
+
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
@@ -219,6 +219,7 @@
 
     </div>
     @yield('scripts')
+    @include('sweetalert::alert')
     <!-- Jquery JS-->
     <script src="{{ asset('/cooladmin/vendor/jquery-3.2.1.min.js') }}"></script>
     <!-- Bootstrap JS-->

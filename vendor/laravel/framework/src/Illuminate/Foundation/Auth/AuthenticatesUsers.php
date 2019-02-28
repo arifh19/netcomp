@@ -50,7 +50,7 @@ trait AuthenticatesUsers
         // to login and redirect the user back to the login form. Of course, when this
         // user surpasses their maximum number of attempts they will get locked out.
         $this->incrementLoginAttempts($request);
-        Alert::warning('Email atau password salah', 'Warning!');
+        Alert::warning('Email atau password salah')->persistent("Ok");;
         return $this->sendFailedLoginResponse($request);
     }
 
