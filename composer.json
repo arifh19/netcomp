@@ -13,6 +13,7 @@
         "goodnesskay/laravelpdfviewer": "^1.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "realrashid/sweet-alert": "^1.1",
         "santigarcor/laratrust": "5.0.*"
     },
     "require-dev": {

@@ -30,8 +30,9 @@
     <!-- Main CSS-->
     <link href="{{ asset('/cooladmin/css/theme.css') }}" rel="stylesheet" media="all">
 
-</head>
 
+</head>
+@include('sweetalert::alert')
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
