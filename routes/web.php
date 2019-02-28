@@ -45,7 +45,7 @@ Route::post('/peserta/proposal', [
     'uses' => 'ProposalController@store'
 ]);
 
-Route::post('/peserta/proposal', [
+Route::post('/peserta/tim', [
     'middleware' => ['auth', 'role:peserta'],
     'as' => 'team.store',
     'uses' => 'TeamController@store'
