@@ -6,11 +6,26 @@
         <div class="col-lg-3 center">
         </div>
         <div class="col-lg-6 center">
+            <div class="alert au-alert-success alert-dismissible fade show au-alert au-alert--70per" role="alert">
+                @if($team->verify_id==1)
+                <i class="zmdi zmdi-close-circle"></i>
+                @elseif($team->verify_id==2)
+                <i class="zmdi zmdi-check-circle"></i>
+                @else
+                @endif
+                <span class="content">{{$team->verify->keterangan}}</span>
+                <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+
+
+
             <div class="card">
                 <div class="card-header">
                     <center>Net Competition</center>
                 </div>
-
                 <div class="card-body">
                     <div class="card-title">
                         <div class="row">
@@ -21,7 +36,6 @@
                                 <h3 class="text-center title-2">Data Tim</h3>
                             </div>
                         </div>
-
                     </div>
                     <hr>
                     <div class="form-group">

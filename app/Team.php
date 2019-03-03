@@ -11,4 +11,8 @@ class Team extends Model
     {
         return $this->belongsTo('App\Kategori');
     }
+    public function verify()
+    {
+        return $this->belongsTo('App\Verify');
+    }
 }

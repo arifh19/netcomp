@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Proposal;
+use App\Team;
 use Illuminate\Support\Facades\File;
 
 
@@ -16,12 +17,17 @@ class ProposalController extends Controller
      */
     public function index()
     {
-        $proposals = Proposal::where('user_id',auth()->user()->id);
-        $proposal = $proposals->first();
-        if($proposals->count()>0){
-            return view('peserta.proposal')->with(compact('proposal'));
-        }else{
-            return view('peserta.proposal');
+        if(Team::where('user_id', auth()->user()->id)->first()->verify_id==1){
+            return redirect()->route('peserta.tim')->with('warning', 'Data tim belum terverifikasi');
+        }
+        else{
+            $proposals = Proposal::where('user_id',auth()->user()->id);
+            $proposal = $proposals->first();
+            if($proposals->count()>0){
+                return view('peserta.proposal')->with(compact('proposal'));
+            }else{
+                return view('peserta.proposal');
+            }
         }
 
     }
