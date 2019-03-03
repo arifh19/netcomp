@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'HomeController@index')->name('landing');
+Route::get('/', 'LandingController@index')->name('landing');
 
 Route::get('/landing', function () {
     return view('welcome');
