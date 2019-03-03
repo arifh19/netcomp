@@ -44,10 +44,10 @@
 			<div class="collapse navbar-collapse" id="mynavbar">
 				<ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">daftar<span class="line_menu"></span></a>  
+                        <a class="nav-link" href="/register">daftar<span class="line_menu"></span></a>  
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/register">login<span class="line_menu"></span></a>  
+                        <a class="nav-link" href="/login">login<span class="line_menu"></span></a>  
                     </li>       
                 </ul>
 			</div>
