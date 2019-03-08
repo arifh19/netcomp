@@ -20,6 +20,8 @@ Route::get('/landing', function () {
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/lomba/networking', 'LandingController@networking')->name('networking');
+Route::get('/lomba/innovative', 'LandingController@innovative')->name('innovative');
 
 Route::get('/peserta/tim', [
     'middleware' => ['auth', 'role:peserta'],

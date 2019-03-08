@@ -1,75 +1,6 @@
+@extends('layouts.welcome')
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Home - Net Competition</title>
-
-
-    <link rel="shortcut icon" type="image/png" href="img/logo-brand.png"/>
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="{{ asset('vendor//bootstrap/bootstrap.min.css') }}" >
-    <link rel="stylesheet" href="{{ asset('css/animate1.css') }}" >
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('vendor/lightcase/css/lightcase.css') }}" >
-    <link rel="stylesheet" href="{{ asset('vendor/slick/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/slick/slick-theme.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app1.css') }}">
-    <!-- Font Awesome JS -->
-    <script defer src="{{ asset('vendor/fontawesome/solid.js') }}"></script>
-    <script defer src="{{ asset('vendor/fontawesome/fontawesome.js') }}"></script>
-
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top bottom-animated" id="myNav">
-		<div class="container-fluid">
-        <a href="/" class="navbar-brand">
-                <div class="logo-nav"></div>
-                <div class="logo-nav-mobile"></div>
-			</a>
-			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#mynavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="mynavbar">
-				<ul class="navbar-nav ml-auto">
-                    @if (Auth::guest())
-                    <li class="nav-item">
-                            <a class="nav-link" href="/register">daftar<span class="line_menu"></span></a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">login<span class="line_menu"></span></a>
-                    </li>
-                    @else
-                    <li class="nav-item">
-                        <a class="nav-link" href="/home">Dashboard<span class="line_menu"></span></a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">{{auth()->user()->name}}<span class="line_menu"></span></a>
-                        <div class="nav-item dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button"><a href="#">Account</a></button>
-                            <button class="dropdown-item" type="button"><a href="#">Setting</a></button>
-                            <button class="dropdown-item" type="button"><a href="/logout">Logout</a></button>
-                        </div>
-
-                    </li>
-                    @endif
-                </ul>
-			</div>
-		</div>
-    </nav>
-
-
+@section('content')
     <header class="video-header container-video">
         <div class="fullscreen-video-wrap">
             <video src="video/header.mp4" muted="muted" autoplay="true" loop="true" width="100%" height="100%" class="videoinsert">
@@ -88,8 +19,21 @@
                 </div>
         </div>
     </header>
-
-
+    <section id="tentang">
+        <br><br>
+		<div class="container sec-title">
+			<div class="row">
+				<div class="col-md-12 bottom-animated">
+                    <h1 class="sec-title text-center">NETCOMP 2019</h1>
+                    <hr class="title-line" />
+                </div>
+            </div>
+             <!-- Karu perlombaan-->
+            <div class="row bottom-animated">
+                <p style="color: black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dicta vel harum rerum perferendis facilis dignissimos pariatur culpa eius, soluta fuga quidem eum ea ipsum, ex a quaerat consequuntur voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam delectus reprehenderit quam officia consequuntur quas atque ab error sit veniam rem magni architecto, amet, quisquam, magnam cupiditate dolore aspernatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aspernatur laudantium error, maiores saepe in quisquam tempore totam labore nam quae quam voluptate adipisci rem officiis, assumenda culpa dolorum inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam mollitia omnis voluptates voluptas iure quidem cupiditate qui, a impedit quas, earum ducimus? Quod veniam impedit aut accusantium et voluptates?</p>
+            </div>
+		</div>
+    </section>
     <section id="perlombaan">
 		<div class="container sec-title">
 			<div class="row">
@@ -105,7 +49,7 @@
                         <img class="card-img-top img-responsive" src="img/gambar-net.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="text-center">
-                                <a href="#"><button class="btn btn-custom btn-transparent">Selengkapnya</button></a>
+                            <a href="{{route('networking')}}"><button class="btn btn-custom btn-transparent">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +60,7 @@
                         <img class="card-img-top img-responsive" src="img/gambar-idea.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="text-center">
-                                    <a href="#"><button class="btn btn-custom btn-transparent">Selengkapnya</button></a>
+                                    <a href="{{route('innovative')}}"><button class="btn btn-custom btn-transparent">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +70,7 @@
     </section>
 
 
-  <section id="timeline" class="bottom-animated">
+    <section id="timeline" class="bottom-animated">
 		<div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -248,40 +192,4 @@
             </div>
         </div>
     </section>
-
-
-    <footer id="footer">
-        <p class="smaller wh text-center mb-0 mg-t-20">Net Competition - Teknologi Rekayasa Internet <br> Sekolah Vokasi, Universitas Gadjah Mada</p>
-    </footer>
-
-
-    <!-- jQuery  -->
-    <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
-
-
-    <script src="{{ asset('vendor/slick/slick.js') }}"></script>
-    <script src="{{ asset('vendor/lightcase/js/lightcase.js') }}"></script>
-    <!-- Popper.JS -->
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <!-- Bootstrap JS -->
-    <script src="{{ asset('vendor/bootstrap/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/animatescroll.js') }}"></script>
-    <script src="{{ asset('js/jquery.easeScroll.js') }}"></script>
-    <script src="{{ asset('js/main1.js') }}"></script>
-
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133874037-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-133874037-1');
-    </script>
-
-
-
-</body>
-
-</html>
+@endsection

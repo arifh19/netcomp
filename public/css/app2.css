@@ -1,35 +1,15 @@
-/* pengaturan umum
-=================== */
+/*====================================*/
+/*========== GENERAL STYLE ==========*/
+/*==================================*/
+
 *{
     box-sizing:border-box;
 }
+
 body{
-	margin: auto;
-    padding: 0;
-    font-family: 'Roboto Slab', sans-serif !important;
-    overflow-x: hidden;
-}
-
-
-
-.headline{
-    font-size:64px;
-    color:#fff;
-    font-weight: bold;
-}
-.header-content .call-btn{
-    margin-top:40px;
-}
-.desc-header{
-    font-family: 'Dancing Script', cursive;
-    color: #EFE2FF;
-    text-align: center;
-    margin: auto;
-    font-size: 24px;
-    font-weight: 400;
-}
-.horizontal-center{
-    text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif !important;
 }
 
 .btn-mobile{
@@ -47,7 +27,7 @@ body{
     height: 100%;
     top:0;
     left:0;
-    background:linear-gradient(to right, #049fd7, #0090c4, #037aa5)
+    background:rgba(32,10,111,0.8);  
 }
 
 .form-signin .form-group input, .form-group select, .input-line{
@@ -74,34 +54,30 @@ body{
     right:98%;
 }
 
-/* Button Style */
-
+/*========== Button Style ==========*/
 .btn-custom{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+	font-size: 13px;
 	border-radius: 100px;
-	padding: 15px 30px;
-	background: #fff;
-	color: #3843df;
+	padding: 10px 60px;
+	background: #6a4cdb;
+	color: #fff;
 	transition-duration: 1.3s;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 }
 .btn-custom:hover{
-    background: #3843df;
-    color: #fff
+	background: #5430b1;
 }
 
 .btn-transparent{
-    color:#3843df;
+    color:#6a4cdb;
     background: transparent;
-    border:1px solid  #3843df;
+    border:1px solid  #6a4cdb;
 }
 
 .btn-transparent:hover{
     color:white;
-    background:#3843df;
+    background:#6a4cdb;;
  
 }
 
@@ -121,11 +97,11 @@ body{
 
 
 
-/*Section Title Style*/
+/*========== Section Title Style ==========*/
 .sec-title{
     font-family: 'Quicksand', sans-serif !important;
 	text-align: left;
-    color: #3843df;
+    color: #361A8B;
     font-weight: bold;
 }
 
@@ -136,7 +112,7 @@ body{
     margin-bottom:50px;
 }
 
-/*Scroll Bar Style*/
+/*========== Scroll Bar Style ==========*/
 ::-webkit-scrollbar {
     width: 4px;
     background: transparent;
@@ -156,11 +132,11 @@ body{
     background: #5430b1; 
   }
 
-
-/*Navbar Custom Style
-=======================*/
+/*==========================================*/
+/*========== Navbar Custom Style ==========*/
+/*========================================*/
 nav{
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Quicksand', sans-serif !important;
     background: transparent;
     transition-duration: 1s;
     color:white;
@@ -174,32 +150,31 @@ nav.navbar{
 .logo-nav{
 	width: 350px;
 	height: 50px;
-	background: url('../img/text-logo.png') no-repeat;
+	background: url('../img/logo_text.png') no-repeat;
 	transition-duration: 1.5s;
 }
 .logo-nav-white{
-	background: url('../img/text-logo.png') no-repeat;
+	background: url('../img/logo_text_white.png') no-repeat;
 	width: 350px;
 	height: 50px;
 }
 nav.navScroll{
-	background: linear-gradient(to right, #049fd7, #0090c4, #037aa5);
+	background: linear-gradient(to right, #6A4CDB, #5430B1, #200A6F);
     box-shadow: 0 4px 8px 0 rgba(51,51,51, 0.1), 0 8px 20px 0 rgba(51,51,51, 0.3);
 }
 .navbar-toggler{
 	border:none;
 }
 .nav-link{
-    font-size:15px;
-    letter-spacing: 2px;
-    line-height:20px;
+    font-size:12px;
+    letter-spacing: 3px;
+    line-height:15px;
     cursor: pointer;
 	transition-duration: 0.3s;
 	-webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     color:white;
     margin-top:8px;
-    text-transform: uppercase;
 }
 .nav-link:hover{
     color:white;
@@ -220,16 +195,16 @@ nav.navScroll{
 
 @media screen and (max-width: 768px) {
 	nav{
-		background: -webkit-linear-gradient(to right, #049fd7, #0090c4, #037aa5);
-		background: -o-linear-gradient(to right, #049fd7, #0090c4, #037aa5);
-		background: linear-gradient(to right, #049fd7, #0090c4, #037aa5);
+		background: -webkit-linear-gradient(to right, #6A4CDB, #5430B1, #200A6F);
+		background: -o-linear-gradient(to right, #6A4CDB, #5430B1, #200A6F);
+		background: linear-gradient(to right, #6A4CDB, #5430B1, #200A6F);
     	box-shadow: 0 4px 8px 0 rgba(51,51,51, 0.1), 0 8px 20px 0 rgba(51,51,51, 0.3);
     }
     .logo-nav, .logo-nav-white{
         display: none;
     }
     .logo-nav-mobile{
-        background: url('../img/text-logo.png') no-repeat;
+        background: url('../img/logo_text_white.png') no-repeat;
         width: 225px;
         height: 50px;
     }
@@ -240,97 +215,132 @@ nav.navScroll{
         display: none;
     }
     .logo-nav-mobile{
-        background: url('../img/text-logo.png') no-repeat;
+        background: url('../img/logo_text_white.png') no-repeat;
         width: 225px;
         height: 50px;
     }
 
 }
-/* VIDEO HEADER
-=========================== */
 
-.video-header{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin-right: 0px;
-    margin-left: 0px;
+
+
+
+/*============================================*/
+/*========== HHEADER STYLE SECTION ==========*/
+/*==========================================*/
+
+#header{
+    margin-top:-10px;
+	padding-top: 200px;
+	padding-left: 100px;
+	min-height: 100vh;
+	background: url('../img/header_bg.png') no-repeat;
+    background-size:cover;
+    background-position: top right;
 }
 
-.container-video{
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
+
+#header .headline{
+    font-size:32px;
+    color:#361A8B;
+    font-weight: bold;
+}
+#header .call-btn{
+    margin-top:40px;
 }
 
-video{
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 768px) {
+    #header{
+       padding-top:150px;
+        padding-left: 0px;
+        text-align: left;
+        background: url('../img/header_bg.png') no-repeat;
+        background-size:cover;
+        background-position: top right;
+    }
+    #header .headline{
+        margin-left:0px;
+        color:white;
+    }
+    #header .call-btn{
+        margin-top:20px;
+    }
+    
+    .m-margin10{
+        margin:10px 0px;
+    }
+    #header .btn-transparent{
+        color:white;
+        background: transparent;
+        border:1px solid  white;
+    }
+    #header .btn-transparent:hover{
+        background: white;
+        color:black
+    }
 }
 
-.videoinsert{
-    width: auto;
-    height: auto;
-    background-size: cover;
+/*==========================================*/
+/*========== ABOUT Custom Style ==========*/
+/*========================================*/
+
+#about{
+    padding-top:100px;
+	min-height:100vh;
+	background: url('../img/tentang_bg.png') no-repeat;
+	background-size: 100% 100%;
 }
 
-.fullscreen-video-wrap{
+
+#about .video_box{
+    min-height: 400px;
+    background: #61ad9e;
+    position: relative;
+    cursor: pointer;
+}
+#about .play_btn{
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    width: 150px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
 }
 
-.fullscreen-video-wrap video{
-    min-width: 100%;
-    min-height: 100%;
+#about .content{
+	padding-top: 50px;
+    padding-left: 50px;
+
 }
-.header-overlay{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #0090c4;
-    z-index: 1;
-    opacity: 0.59;
+
+.btn-about{
+	margin: 0px auto;
 }
-.header-content{
-    z-index: 2;
-    display: inline-block;
-    margin: auto;
-    padding-top: 40px;
-}
-.header-content h1{
-    margin-bottom: 0;
-}
-@media screen and (max-width:960px){
-    .container{
-        padding-right: 3rem;
-        padding-left: 3rem;
+@media screen and (max-width: 768px) {
+    #about{
+		padding-top: 20px;
+		background: transparent;
+		background-size: cover;
     }
-}
-@media screen and (max-width:500px){
-    .headline{
-        font-size: 50px;
-    }
-    .desc-header{
-        font-size: 14px;
+    
+    #about .content{
+        padding-top: 20px;
+        margin-left:-20px;
+        text-align:center;
     }
 }
 
-/* =====perlombaan==== */
-#perlombaan{
+
+
+
+/* Competition */
+#competition{
 	padding-top: 100px;
 	padding-bottom: 100px;
-    background: white;
+	background: white;
 }
-#perlombaan .title{
+#competition .title{
     background:#EFE2FF; 
     font-size:18px;
     padding:10px 20px ;
@@ -338,42 +348,94 @@ video{
     margin-bottom:50px;
 }
 
-#perlombaan .card{
+#competition .card{
     margin-top:50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#perlombaan .card img{ 
-  width: 100%;
-  display: inline-block;
-  width: 100%;
-  /* height: 15vw; */
-  object-fit: cover;
+
+#competition .card img{ 
+  width: 75%;
+  display: block;
+  margin:20px auto;
 }
+
+
 @media screen and (max-width: 768px) {
-    #perlombaan{
+    #competition{
         padding-top: 50px;
         padding-bottom: 100px;
         background: white;
     }
+ 
+
+
+  
 }
+
+
+
+/* National Festival Technology */
+
+#festival{
+	padding-top: 50px;
+    min-height:85vh;
+    height:auto;
+    background: url('../img/berita_bg.png');
+    background-size:100% 100%;
+}
+
+#festival .left-box{
+    color:white;
+    text-indent:32px;
+    font-size:14px;
+    line-height: 24px;;
+    text-align: justify;
+}
+#festival .left-box .btn-green{
+    margin-left:-30px;
+}
+
+#festival .sec-title{
+    color:white !important;
+}
+#festival img{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    #festival{
+        padding-bottom:20px;
+    }
+    #festival  .left-box .mybtn{
+        display: none;
+    }
+
+    #festival .btn-mobile{
+        display: block;
+    }
+}
+
 
 /*TIMELINE*/
 #timeline{
     padding-top:100px;
 	min-height:70vh;
 	background:white;
-    background-size:cover;
-    padding-bottom: 100px;
+	background-size:cover;
 }
 
 #timeline section {
     display: none;
     padding: 20px 0 0;
-    width:100%;   
+    width:100%;
+   
   }
+
+
+
 #timeline input {
     display: none;
-  }  
+  }
+  
   #timeline   label {
     display: inline-block;
     margin: 0 0 -1px;
@@ -407,20 +469,22 @@ video{
   
   }
   
-  #timeline  #netT:checked ~ #netContent,
-  #timeline #ideaT:checked ~ #ideaContent {
-    display: block; 
+  #timeline  #wdcTab:checked ~ #wdcContent,
+  #timeline #madcTab:checked ~ #madcContent,
+  #timeline  #ntfTab:checked ~ #ntfContent,
+  #timeline  #icpcTab:checked ~ #icpcContent {
+    display: block;
+    
   }
-  .desc-timeline{
-      font-size: 16px;
-  }
+  
   #timeline .timeline_info{
       text-align: left;
-      margin-left: 100px;
+
   }
   .timeline_info .date, .timeline_info .icon, .timeline_info .text{
     width:auto;
     display: inline-block;
+
   }  
 
   #timeline .tab-title{
@@ -454,7 +518,7 @@ video{
     margin: 0 10px 15px;
   }
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 800px) {
     #timeline label {
       font-size: 12px;
     }
@@ -486,24 +550,246 @@ video{
     #timeline .mb-10{
         margin-bottom:20px;
     }
-    #timeline .timeline_info{
-        margin-left: 0px;
-    }
   }
   
   @media screen and (max-width: 500px) {
     #timeline label {
       padding: 15px;
     }
-    #timeline .timeline_info{
-        margin-left: 0px;
-    }
  
 
   }
 
+/*NEWS*/
+#news {
+    padding-top:150px;
+    margin: 0px auto;
+}
+
+
+#news .slick-slide {
+  margin: 0px 20px;
+}
+
+#news .slick-slide h1{
+    margin:8px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#news .slick-slide small{
+    display: block;
+    margin-bottom:12px;
+}
+
+#news .slick-slide img {
+  max-width: 100%;
+  height: 200px;
+}
+
+#news .slick-prev:before,
+#news .slick-next:before {
+  color:#3c9886;
+}
+
+
+#news .slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+#news .slick-active {
+  opacity: .5;
+}
+
+#news .slick-current {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	#news {
+        padding-top:100px;
+
+    }
+
+   
+}
+
+
+#galleries {
+    padding-top:100px;
+    min-height:80vh;
+    height:auto;
+	background: white;
+    background-size: 100% 100%;
+}
+/*galleries*/
+#galleries .photo-grid {  
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;  
+  }
+  
+  #galleries .photo-grid  img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  @media (max-width: 1200px) {
+    #galleries .photo-grid  {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #galleries .photo-grid  {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #galleries .photo-grid  {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #galleries .photo-grid  {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+
+
+/*Sponsorship*/
+#sponsorship{
+    padding-top:100px;
+    min-height:80vh;
+    height:auto;
+	background: white;
+	background-size: 100% 100%;
+}
+#sponsorship .logo{
+    padding:10px;
+    width: 100%;
+    cursor:pointer;
+    filter: grayscale(100%);
+    transition: filter 1s;
+
+}
+
+#sponsorship .logo:hover{
+ filter:none;
+
+}
+
+@media screen and (max-width: 769px) {
+	#sponsorship {
+        padding-top:10px;
+        margin: 0px auto;
+    }
+}
+
+
+/*contact*/
+#contact{
+    padding-top:20px;
+    min-height:60vh;
+    background: white;
+	background-size: 100% 100%;
+}
+#contact .left-box{
+    font-size:14px;
+    padding-top:50px;
+}
+
+@media screen and (max-width: 769px) {
+	#contact {
+        padding-top:20px;
+        margin: 0px auto;
+    }
+
+    #contact .left-box{
+        font-size:12px;
+        padding-top:50px;
+    }
+    
+}
+
+#new-page{
+    height:auto;
+}
+
+.news-title{
+    min-height: 50vh;
+    height:auto;
+    background: url('../img/travel.png') no-repeat;
+    background-position: center bottom;
+    position: relative;
+    color:white;
+    text-align: justify;
+}
+#news-page .title-box{
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#news-page .title-box h1{
+    font-size: 1.6em;
+}
+#news-page .content{
+    padding-top:20px;
+}
+#news-page .content p{
+    color: gray;
+    text-indent: 32px;
+    text-align: justify;
+}
+#news-page img{
+    display: block;
+    margin:20px 0px;
+    width: 100%;
+}
+
+#news-page .related-post{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#news-page .related-post h5{
+    color:#361A8B;
+    padding-bottom: 20px;
+}
+
+#news-page .related-post h1 a{
+    display: block;
+    font-size:14px;
+    text-align: left;
+    margin:0px ;
+    font-weight: bold;
+    color:#1E1E1E;
+}
+#news-page .related-post span{
+    display: block;
+    text-align: left;
+    font-size:11px;
+}
+
+
 /* Competition page, register page and login page style*/
-#perlombaan-page, #login-page, #register-page{
+#competition-page, #login-page, #register-page{
     min-height: 100vh;
     height:auto;
     background: url('../img/travel.png') no-repeat;
@@ -514,21 +800,21 @@ video{
 }
 
 
-#perlombaan-page{
+#competition-page{
 	padding-top: 200px;
 }
 
 
-#perlombaan-page .title{
+#competition-page .title{
     text-align: left !important;
     font-size:32px;
 }
-#perlombaan-page .title span{
+#competition-page .title span{
     font-weight: 1000;
     font-size:42px;
 }
 
-#perlombaan-page .content{
+#competition-page .content{
     text-align: justify;
     text-indent: 24px;
     font-size:14px;
@@ -536,7 +822,7 @@ video{
     margin-top:20px;
 }
 
-#perlombaan-page .logo{
+#competition-page .logo{
     min-width: 200px;
     width: 100%;
     
@@ -643,10 +929,9 @@ video{
 
 #footer{
     color:white;
-    padding:20px;
-    background: #0090c4;
-    font-size:15px;
-    font-weight: 500;
+    padding:10px;
+    background: #543081;
+    font-size:12px;
 
 }
 
@@ -677,7 +962,6 @@ video{
     -o-animation:      pulse 3s; /* Opera 12+ */
     animation:         pulse 3s; /* IE 10+, Fx 29+ */
   }
-
 
 
 

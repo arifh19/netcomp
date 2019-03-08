@@ -12,6 +12,14 @@ class LandingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    public function networking(){
+        return view('page.networking');
+    }
+    public function innovative(){
+        return view('page.innovative');
+    }
+
     public function index()
     {
         return view('landing');
