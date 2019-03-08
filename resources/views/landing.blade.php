@@ -101,10 +101,13 @@
                                 </div>
                                 <div class="timeline-item mb-10">
                                     <div class="row">
-                                        <div class="order-xs-1 col-xs-12  order-sm-1 col-sm-12  order-md-3 col-md-3  ">
+                                        <div class="order-xs-2 col-xs-12  order-sm-2 col-sm-12  order-md-1 col-md-3 ">
+                                            <div class="date">5 Februari 2019</div> 
+                                        </div>  
+                                        <div class="order-xs-1 col-xs-12  order-sm-1 col-sm-12  order-md-2 col-md-2  ">
                                             <div class="icon"><i class="fas fa-lg fa-exclamation"></i></div>
                                         </div>
-                                        <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-4 col-md-8 desc-timeline  ">
+                                        <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-3 col-md-7">
                                             <div class="text"><b>Tahap 1:</b><br> Soal Teori</div>
                                         </div>
                                     </div>
