@@ -30,12 +30,13 @@
             </div>
              <!-- Karu perlombaan-->
             <div class="row bottom-animated">
-                <center><p style="color: black">NETCOMP 2019 merupakan kompetisi bidang teknologi dalam ranah jaringan yang diselenggarakan oleh Forum Komunikasi Teknologi Rekayasa Internet (Forkom TRI) Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada. 
+                <center><p style="color: black">NETCOMP 2019 merupakan kompetisi bidang teknologi dalam ranah jaringan internet yang diselenggarakan oleh Forum Komunikasi Teknologi Rekayasa Internet (Forkom TRI) Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada.
 
-                        Kompetisi ini ditujukan untuk mahasiswa aktif D4 TRI angkatan 2017 dan 2018 sebagai sarana mengasah kemampuan sekaligus mengembangkan minat mahasiswa TRI agar selalu semangat dalam berinovasi dan berkarya untuk memajukan daya saing Indonesia di bidang teknologi dimasa mendatang.
-                        
-                        Mengusung tema "Future Comes From Us", Netcomp kembali hadir dengan dua kompetisi, yaitu Networking dan Innovative 
-                        Idea. Mari kontribusikan ide kreatifmu di Netcomp 2019 dan menangkan hadiahnya!</p></center>
+                    Kompetisi ini ditujukan untuk mahasiswa aktif D4 TRI angkatan 2017 dan 2018 sebagai sarana mengasah kemampuan sekaligus mengembangkan minat mahasiswa TRI agar selalu semangat dalam berinovasi dan berkarya untuk memajukan daya saing Indonesia di bidang teknologi dimasa mendatang.
+
+                    Mengusung tema "Future Comes From Us", Netcomp akan hadir dengan dua kompetisi, yaitu Networking dan Innovative
+                    Idea. Dua kompetisi ini tentunya menjadi sarana yang tepat buat kalian yang punya ide-ide brilian nan inovatif sekaligus meng-upgrade kemampuan jaringan internetmu saat ini.
+                    Mari berkontribusi di Netcomp 2019, asah skillmu, dan menangkan hadiahnya!</p></center>
             </div>
 		</div>
     </section>
@@ -100,20 +101,17 @@
                                         </div>
                                         <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-4 col-md-8 desc-timeline">
                                             <div class="text"><b>Pendaftaran</b><br>
-                                                <a href="#">Unduh buku panduan.</a></div>
+                                                <a href="/panduan.pdf">Unduh buku panduan.</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="timeline-item mb-10">
                                     <div class="row">
-                                        <div class="order-xs-2 col-xs-12  order-sm-2 col-sm-12  order-md-1 col-md-3 ">
-                                            <div class="date">5 Februari 2019</div> 
-                                        </div>  
-                                        <div class="order-xs-1 col-xs-12  order-sm-1 col-sm-12  order-md-2 col-md-2  ">
+                                        <div class="order-xs-1 col-xs-12  order-sm-1 col-sm-12  order-md-3 col-md-3  ">
                                             <div class="icon"><i class="fas fa-lg fa-exclamation"></i></div>
                                         </div>
-                                        <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-3 col-md-7">
-                                            <div class="text"><b>Tahap 1:</b><br> Soal Teori</div>
+                                        <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-4 col-md-8">
+                                            <div class="text"><b>Tahap 1:</b><br> Soal Teori</div><br>
                                         </div>
                                     </div>
                                 </div>

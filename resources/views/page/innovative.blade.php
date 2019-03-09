@@ -16,7 +16,7 @@
                             <p>Juara 3 <br/> Sepatu</p>
                         </div>
                     </p>
-                        <button class="btn btn-green"><a href="#" target="_blank" style="color:white">Download Buku Panduan</a></button><br />
+                        <button class="btn btn-green"><a href="/panduan.pdf" target="_blank" style="color:white">Download Buku Panduan</a></button><br />
                     </p>
                 </div>
                 <div class="col-md-4 offset-md-1 right-animated">
