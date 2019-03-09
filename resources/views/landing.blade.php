@@ -30,7 +30,12 @@
             </div>
              <!-- Karu perlombaan-->
             <div class="row bottom-animated">
-                <p style="color: black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dicta vel harum rerum perferendis facilis dignissimos pariatur culpa eius, soluta fuga quidem eum ea ipsum, ex a quaerat consequuntur voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam delectus reprehenderit quam officia consequuntur quas atque ab error sit veniam rem magni architecto, amet, quisquam, magnam cupiditate dolore aspernatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aspernatur laudantium error, maiores saepe in quisquam tempore totam labore nam quae quam voluptate adipisci rem officiis, assumenda culpa dolorum inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam mollitia omnis voluptates voluptas iure quidem cupiditate qui, a impedit quas, earum ducimus? Quod veniam impedit aut accusantium et voluptates?</p>
+                <center><p style="color: black">NETCOMP 2019 merupakan kompetisi bidang teknologi dalam ranah jaringan yang diselenggarakan oleh Forum Komunikasi Teknologi Rekayasa Internet (Forkom TRI) Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada. 
+
+                        Kompetisi ini ditujukan untuk mahasiswa aktif D4 TRI angkatan 2017 dan 2018 sebagai sarana mengasah kemampuan sekaligus mengembangkan minat mahasiswa TRI agar selalu semangat dalam berinovasi dan berkarya untuk memajukan daya saing Indonesia di bidang teknologi dimasa mendatang.
+                        
+                        Mengusung tema "Future Comes From Us", Netcomp kembali hadir dengan dua kompetisi, yaitu Networking dan Innovative 
+                        Idea. Mari kontribusikan ide kreatifmu di Netcomp 2019 dan menangkan hadiahnya!</p></center>
             </div>
 		</div>
     </section>
