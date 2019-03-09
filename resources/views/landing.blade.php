@@ -147,7 +147,7 @@
                                         </div>
                                     <div class="order-xs-3 col-xs-12 order-sm-3 col-sm-12  order-md-4 col-md-8 desc-timeline">
                                         <div class="text"><b>Pendaftaran</b><br>
-                                        <a href="#">Unduh buku panduan.</a></div>
+                                        <a href="/panduan.pdf">Unduh buku panduan.</a></div>
                                     </div>
                                     </div>
                                 </div>
