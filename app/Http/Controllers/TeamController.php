@@ -54,7 +54,7 @@ class TeamController extends Controller
             $team = Team::create($request->all());
         }
         $team->user_id = auth()->user()->id;
-        $team->verify_id = 1;
+        $team->verify_id = 2;
         $team->save();
         return redirect()->route('peserta.tim')->with('success', 'Data telah diperbaharui');
     }
